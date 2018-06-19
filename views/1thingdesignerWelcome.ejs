@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Designer Emailer </title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+    .font_size_one {
+        font-size: 24px;
+    }
+    td {
+            vertical-align: top;
+        }
+    .font_size_three {
+        font-size: 15px;
+        /*font-weight: 100;*/
+    }
+     .textData{
+      word-wrap: normal;
+      font-size: 18px;
+      text-align: left;
+      letter-spacing: 0.5px;
+      color:#030303;
+      line-height: 1.67;
+      font-weight: 300;  
+      font-family: 'Muli',Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;
+    }
+    .tdWidth{
+    width: 10%;
+  }
+  .lableWidth{
+    width: 40%;
+  }
+  .lableWidth2{
+    width: 40%;
+  }
+
+    @media only screen and (max-width: 480px) {
+        .cta-btn {
+            width:60% !important;
+        }
+        .mobile-margin {
+            width:2% !important;
+        }
+        .hide-in-mobile {
+            display: none !important;
+        }
+        .font_size_one {
+            font-size: 20px !important;
+        }
+
+        .logo_header {
+            height: 18px !important;
+        }
+        .space_after_logo {
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+        table .column {
+            width: 100%!important;
+            min-width: 100%!important;
+            text-align: center;
+        }
+        table .column img {
+            max-height: 30% !important;
+        }
+        table .column2 {
+            text-align: center;
+            width: 100% !important;
+            min-width: 100% !important;
+        }
+    }
+    </style>
+</head>
+
+<body yahoo="" style="margin: 0; padding: 0; min-width: 100%!important; background-color: #f8f8f8;">
+    <table align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td style="height:30px;" width="1680px" align="center" valign="middle" bgcolor="#f8f8f8"></td>
+        </tr>
+        <tr>
+            <td width="1680px" align="center" valign="middle" bgcolor="#f8f8f8">
+                <table style="width: 96%; max-width: 600px; background-color: #FFFFFF; margin: 0 2% ;" class=" content-top-border" align="center" cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                        <tr>
+                            <td style="width:10%;"></td>
+                            <td align="left" style="text-align: left;"><img class="logo_header" style="height:22px; max-width: 100%; margin:70px 0;" src="https://s3.ap-south-1.amazonaws.com/emailers-img/logo.png" /></td>
+                            <td align="right" style="text-align: right;" style="width:40%;">
+                                <a class="hide-in-mobile" href="" style="text-decoration: none; color: #0d65d8; font-size: 12px; font-family: 'Muli',Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif; font-weight: 300;">Twitter &bull;</a>
+                                <a class="hide-in-mobile" href="" style="text-decoration: none; color: #0d65d8; font-size: 12px; font-family: 'Muli',Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif; font-weight: 300;">Medium &bull;</a>
+                                <a class="hide-in-mobile" href="" style="text-decoration: none; color: #0d65d8; font-size: 12px; font-family: 'Muli',Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif; font-weight: 300;">Instagram</a>
+                            </td>
+                            <td style="width:10%;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="width: 96%; max-width: 600px; border-top-left-radius: 4px; border-top-right-radius: 4px; background-color: #ffffff; margin: 0 2%;" class="" align="center" cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                            <tr>
+                                    <td class="tdWidth"></td>
+                                    <td class="textData lableWidth">
+                                        UserType:
+                                    </td>
+                                    <td class="textData lableWidth2">
+                                      Designer
+                                    </td>
+                                    <td class="tdWidth"></td>
+                                </tr>
+                       <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Name:
+                            </td>
+                            <td class="textData lableWidth2">
+                                 <%=info1.name%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                EmailId:
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.email%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                You are:
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.myself%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Mobile:
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.mobile%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Location:
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.location%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                 <!-- You identify yourself as:
+                            </td>
+                            <td class="textData lableWidth2">
+                            <%=info1.profile%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                LinkedIn:
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.linkedinProfile%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Work Experience(in year):
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.workExperience%> 
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Job Time:
+                            </td>
+                            <td class="textData lableWidth2">
+                            <%=info1.role%> 
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Availability(in hours/week):
+                            </td>
+                            <td class="textData lableWidth2">
+                             <%=info1.hoursAvailable%> 
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <%if (info1.portfolio) { %>
+                        <%if (info1.portfolio.length>0) { %>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Portfolio:
+                            </td>
+                            <td class="textData lableWidth2">
+                             <%=info1.portfolio%> 
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <% } %> 
+                        <% } %>                       
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Platforms:
+                            </td>
+                            <td class="textData lableWidth2">
+                             <%=info1.expertisePlatform%> 
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <% for(var i=0; i < info1.expertiseDomain.length; i++) { %>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Preferred Domain:
+                            </td>
+                            <td class="textData lableWidth2">
+                            <%=info1.expertiseDomain[i].name%> 
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Domain Modules:
+                            </td>
+                            <td class="textData lableWidth2">
+                            <%=info1.expertiseDomain[i].info%> 
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <% } %>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                favorite product1:
+                            </td>
+                            <td class="textData lableWidth2">
+                                 <%=info1.work.product1%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                why do you like this product?:
+                            </td>
+                            <td class="textData lableWidth2">
+                                <%=info1.work.info1%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                favorite product2:
+                            </td>
+                            <td class="textData lableWidth2">
+                                 <%=info1.work.product2%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                why do you like this product?:
+                            </td>
+                            <td class="textData lableWidth2">
+                                <%=info1.work.info2%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                favorite product3:
+                            </td>
+                            <td class="textData lableWidth2">
+                                 <%=info1.work.product3%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                why do you like this product?:
+                            </td>
+                            <td class="textData lableWidth2">
+                                <%=info1.work.info3%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                working place:
+                            </td>
+                            <td class="textData lableWidth2">
+                                 <%=info1.workingPlace%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Three things neccessary for you to design:
+                            </td>
+                            <td class="textData lableWidth2">
+                                <%=info1.necessaryThing.things%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                what would you pick?:
+                            </td>
+                            <td class="textData lableWidth2">
+                                <%=info1.necessaryThing.selected%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <%if (info1.rating) { %>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Quality of design:
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.rating.design%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Ability to use tool:
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.rating.tools%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Communication skill:
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.rating.communication%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Project management:
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.rating.projectManagement%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Working in a team:
+                            </td>
+                            <td class="textData lableWidth2">
+                                    <%=info1.rating.workingWithTeam%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                                Leading in a team:
+                            </td>
+                            <td class="textData lableWidth2" style="width: 70px;">
+                                    <%=info1.rating.teamLead%>
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr>
+                        <% } %>                      
+                        <tr>
+                            <td class="tdWidth"></td>
+                            <td class="textData lableWidth">
+                             learn about 1Thing:
+                            </td>
+                            <td class="textData lableWidth2">
+                                 <%=info1.about1thing%>
+                                    
+                            </td>
+                            <td class="tdWidth"></td>
+                        </tr> -->
+
+                    </tbody>
+                </table>
+                
+                <table style="width: 96%; max-width: 600px; background-color: #ffffff; margin: 0 2%;" class=" no-bg" align="center" cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                        <tr>
+                            <td style="height: 60px;"></td>
+                            <td style="height: 60px;"></td>
+                            <td style="height: 60px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="width:10%;"></td>
+                            <td style="border-bottom: 1px solid #f0f0f0;">
+                            </td>
+                            <td style="width:10%;"></td>
+                        </tr>
+                        <tr>
+                            <td style="height: 0px;"></td>
+                            <td style="height: 0px;"></td>
+                            <td style="height: 0px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="width: 96%; max-width: 600px; background-color: #ffffff; margin: 0 2%;" class=" no-bg" align="center" cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                        <tr>
+                            <td style="height: 32px;"></td>
+                            <td style="height: 32px;"></td>
+                            <td style="height: 32px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="width:10%;"></td>
+                            <td align="center" style="vertical-align:middle; text-align: center;" style="width:40%;">
+                                <a href="" style="text-decoration: none; color: #0d65d8; font-size: 12px; font-family: 'Muli',Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif; font-weight: 300;">Twitter &bull;</a>
+                                <a href="" style="text-decoration: none; color: #0d65d8; font-size: 12px; font-family: 'Muli',Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif; font-weight: 300;">Medium &bull;</a>
+                                <a href="" style="text-decoration: none; color: #0d65d8; font-size: 12px; font-family: 'Muli',Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif; font-weight: 300;">Instagram</a>
+                            </td>
+                            <td style="width:10%;"></td>
+                        </tr>
+                        <tr>
+                            <td style="height: 60px;"></td>
+                            <td style="height: 60px;"></td>
+                            <td style="height: 60px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="width: 96%; max-width: 600px; background-color: #ffffff; margin: 0 2%;" class=" no-bg" align="center" cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                        <tr>
+                            <td style="width:2%;height:30px; "></td>
+                            <td style="height:30px;text-align:center; color: #7F7F7F; font-family: 'Muli',Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif; font-weight: 400; font-size: 10px !important;">1THING Design & Innovation Private Limited · Investopad, Sector 32 · Gurgaon 122001 · India</td>
+                            <td style="width:2%;height:30px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
